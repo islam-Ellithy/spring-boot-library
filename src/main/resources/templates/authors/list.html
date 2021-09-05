@@ -1,0 +1,28 @@
+
+<html>
+
+<head>
+    <title>Author List</title>
+</head>
+
+<body>
+
+    <h1>Author List</h1>
+
+
+    <table>        
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+
+        <tr th:each="author : ${authors}">
+            <td th:text="${author.id}"></td>
+            <td th:text="${author.firstName}"></td>
+            <td th:text="${author.lastName}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>

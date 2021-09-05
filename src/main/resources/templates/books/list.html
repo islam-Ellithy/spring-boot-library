@@ -1,0 +1,23 @@
+
+<html>
+<body>
+
+    <h1>Display books</h1>
+    <br/>
+
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Title</td>
+            <td>ISBN</td>
+        </tr>
+
+        <tr th:each="book : ${books}">
+            <td th:text="${book.id}">ID</td>
+            <td th:text="${book.title}">Title</td>
+            <td th:text="${book.isbn}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
